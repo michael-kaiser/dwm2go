@@ -59,23 +59,27 @@ func GetCryptoPrice(symbol string) float64{
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
-		log.Fatal(err)
+		log.Print(err)
+		return 0.0
 	}
 
 	res, getErr := client.Do(req)
 	if getErr != nil {
-		log.Fatal(getErr)
+		log.Print(getErr)
+		return 0.0
 	}
 
 	body, readErr := ioutil.ReadAll(res.Body)
 	if readErr != nil {
-		log.Fatal(readErr)
+		log.Print(readErr)
+		return 0.0
 	}
 
 	crypto := Crypto{}
 	jsonErr := json.Unmarshal(body, &crypto)
 	if jsonErr != nil {
-		log.Fatal(jsonErr)
+		log.Print(jsonErr)
+		return 0.0
 	}
 
 	return crypto.Usd
@@ -280,6 +284,7 @@ func main() {
 
 	go func (){
 		for ;; {
+			time.Sleep(time.Second * 30)
 			var symbols = []string{"BTC"}
 			var logos = []string{""}
 			for _,symbol := range symbols{
@@ -287,7 +292,7 @@ func main() {
 			}
 
 			dataState.cryptoline = CryptoLine(cryptodata, symbols, logos)
-			time.Sleep(time.Second * 1)
+			time.Sleep(time.Minute * 5)
 		}
 
 	}()
