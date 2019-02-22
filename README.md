@@ -1,9 +1,12 @@
-# dwm2go
 # ![alt text][logo]
 
 dwm2go is a feature-rich statusline for the suckless [dwm](https://dwm.suckless.org/)
 dwm window
 manager. dwm2goline is written in the Go Programming Language.
+
+## Screenshots
+![alt text][full]
+![alt text][small]
 
 Up to now, dwm2go supports the following features:
 * show date and time
@@ -15,3 +18,5 @@ Up to now, dwm2go supports the following features:
 * show prices of cryptocurrencies (BTC, ETH)
 
 [logo]: https://github.com/michael-kaiser/blob/blob/master/logo.svg "Logo Title Text 2"
+[full]: https://github.com/michael-kaiser/blob/blob/master/screenshot.png "Logo Title Text 2"
+[small]: https://github.com/michael-kaiser/blob/blob/master/justbar.png "Logo Title Text 2"
