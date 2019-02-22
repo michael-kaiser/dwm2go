@@ -6,8 +6,11 @@ manager. dwm2goline is written in the Go Programming Language.
 
 ## Screenshots
 ![alt text][full]
+
 *dwm window manager with dwm2go statusline*
+
 ![alt text][small]
+
 *the dwm2go statusline*
 
 ## Features
