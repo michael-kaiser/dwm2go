@@ -2,7 +2,7 @@
 
 dwm2go is a feature-rich statusline for the suckless [dwm](https://dwm.suckless.org/)
  window
-manager. dwm2goline is written in the Go Programming Language.
+manager. dwm2go is written in the Go Programming Language.
 
 ## Screenshots
 ![alt text][full]
