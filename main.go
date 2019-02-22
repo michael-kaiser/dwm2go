@@ -161,7 +161,12 @@ func nowPlaying(addr string) (np string, err error) {
 	arr := strings.Split(string(r), "\n")
 	if arr[8] != "state: play" { //arr[8] is the state according to the mpd documentation
 		status := strings.SplitN(arr[8], ": ", 2)
-		np = fmt.Sprintf("mpd - [%s]", status[1]) //status[1] should now be stopped or paused
+		if len(status) == 1{
+			np = fmt.Sprintf("mpd - [%s]", status[0])
+		}else{
+			np = fmt.Sprintf("mpd - [%s]", status[1])
+			//status[1] should now be stopped or paused
+		}
 		return
 	}
 
