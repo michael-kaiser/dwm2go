@@ -24,5 +24,6 @@ install: all
 uninstall:
 	@echo removing executable file from ${DESTDIR}${PREFIX}/bin
 	@rm -f ${DESTDIR}${PREFIX}/bin/${NAME}
+	@rm -f ${NAME}
 
 .PHONY: all options clean dist install uninstall
