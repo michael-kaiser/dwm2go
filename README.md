@@ -46,10 +46,11 @@ For Debian/Ubuntu do `sudo apt-get install go`
 ## Troubleshooting
 
 **I do not see the symbols of the statusbar (Bitcoin symbol etc.)?**
+
 *A: You have to install font-awesome on your system. The statusbar uses [font-awesome4](https://fontawesome.com/v4.7.0/cheatsheet/). Also add fontawesome to your config of dwm. To have the same font as in the screenshots you should have `static const char *fonts[]          = {  "White Rabbit:pixelsize=10;1", "fontawesome-webfont:pixelsize=8;1" };` in your config.h of your dwm installation.*
 
 ## Fonts
 To get the same look please install the following fonts on your system and configure dwm accordingly.
 
-[White Rabbit](https://www.dafont.com/white-rabbit.font)
-[font-awesome4](https://fontawesome.com/v4.7.0/cheatsheet/)
+* [White Rabbit](https://www.dafont.com/white-rabbit.font)
+* [font-awesome4](https://fontawesome.com/v4.7.0/cheatsheet/)
