@@ -8,6 +8,8 @@ manager. dwm2goline is written in the Go Programming Language.
 ![alt text][full]
 ![alt text][small]
 
+## Features
+
 Up to now, dwm2go supports the following features:
 * show date and time
 * show battery status
