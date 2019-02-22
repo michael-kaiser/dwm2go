@@ -6,7 +6,9 @@ manager. dwm2goline is written in the Go Programming Language.
 
 ## Screenshots
 ![alt text][full]
+*dwm window manager with dwm2go statusline*
 ![alt text][small]
+*the dwm2go statusline*
 
 ## Features
 
@@ -19,6 +21,6 @@ Up to now, dwm2go supports the following features:
 * show status of mdp musicplayer and the current song (artist + title)
 * show prices of cryptocurrencies (BTC, ETH)
 
-[logo]: https://github.com/michael-kaiser/blob/blob/master/logo.svg "Logo Title Text 2"
-[full]: https://github.com/michael-kaiser/blob/blob/master/screenshot.png "Logo Title Text 2"
-[small]: https://github.com/michael-kaiser/blob/blob/master/justbar.png "Logo Title Text 2"
+[logo]: https://github.com/michael-kaiser/blob/blob/master/logo.svg "logo"
+[full]: https://github.com/michael-kaiser/blob/blob/master/screenshot.png "fullscree"
+[small]: https://github.com/michael-kaiser/blob/blob/master/justbar.png "just the toolbar"
