@@ -27,3 +27,18 @@ Up to now, dwm2go supports the following features:
 [logo]: https://github.com/michael-kaiser/blob/blob/master/logo.svg "logo"
 [full]: https://github.com/michael-kaiser/blob/blob/master/screenshot.png "fullscree"
 [small]: https://github.com/michael-kaiser/blob/blob/master/justbar.png "just the toolbar"
+
+## Dependencies
+You need golang buildtools to build the files
+
+For Arch install go with `sudo pacman -S go`
+
+For Debian/Ubuntu do `sudo apt-get install go`
+
+## Installation
+
+1. Download dwm2go from github with `git clone https://github.com/michael-kaiser/dwm2go.git`
+2. cd into the directory with `cd /directory/where/dwm2go/is/saved`
+3. Build it with `go build`
+4. run the binary with `./dwm2go`
+5. to start at bootup, also add dwm2go to your *.xinitrc* file
