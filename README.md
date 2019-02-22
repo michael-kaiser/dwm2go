@@ -13,4 +13,4 @@ Up to now, dwm2go supports the following features:
 * show status of mdp musicplayer and the current song (artist + title)
 * show prices of cryptocurrencies (BTC, ETH)
 
-[logo]: https://github.com/michael-kaiser/blob/logo.svg "Logo Title Text 2"
+[logo]: https://github.com/michael-kaiser/blob/blob/master/logo.svg "Logo Title Text 2"
