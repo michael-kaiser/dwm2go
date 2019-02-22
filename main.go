@@ -115,7 +115,11 @@ func GetDate() string{
 func GetUpdates() string{
 	sep := []byte{'\n'}
 	count := 0
-	out, _ := exec.Command("checkupdates").Output()
+	out, err  := exec.Command("checkupdates").Output()
+	if err != nil{
+		log.Print(err)
+	}
+	log.Print(out)
 	count += bytes.Count(out, sep)
 	return fmt.Sprintf("⟳ %d", count)
 }
@@ -262,7 +266,10 @@ func CryptoLine(prices map[string]float64, symbols []string, logos []string) str
 
 func main() {
 	var dpy = C.XOpenDisplay(nil)
-	dataState := Data{music: " ", cpu: "", memory: "", updates: "", battery: "", date: "", time: ""}
+	dataState := Data{music: "", cpu: "", memory: "", updates:
+	"loading updates", battery: "", date: "", time: "",
+		cryptoline: "loading price data"}
+
 	var statusline string
 	var cryptodata = make(map[string]float64)
 
@@ -284,7 +291,7 @@ func main() {
 
 	go func (){
 		for ;; {
-			time.Sleep(time.Second * 30)
+			time.Sleep(time.Second * 20)
 			var symbols = []string{"BTC"}
 			var logos = []string{""}
 			for _,symbol := range symbols{
@@ -299,6 +306,7 @@ func main() {
 
 	go func (){
 		for ;; {
+			time.Sleep(time.Second * 20)
 			dataState.updates = GetUpdates()
 			time.Sleep(time.Minute * 15)
 		}
